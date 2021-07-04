@@ -8,27 +8,36 @@
     <title>Crisp</title>
 </head>
 <body>
+    <div class ="container">
     <h2>Add Transaction</h2>
 
     <form id="addtransform">
-        Date:
-        <br>
-        <input id="date" placeholder="Input date" type="text" />
-        <br>
-        <br>
-        Amount:
-        <br>
-        <input id="amount" placeholder="Input amount" type="text" />
+        <label for="date"> Date:</label>
+        <input id="add-date" placeholder="Input date" type="date" />
         <br>
         <br>
-        Description:
+        <label for="amt"> Amount:
+        <br>(-expenses, +income)
+        </label>
         <br>
-        <input id="desc" placeholder="Input description" type="text" />
+        <input id="add-amount" placeholder="Input amount" type="text" />
         <br>
         <br>
-        <button id="add" class="clickbtn">Add</button>
+        <label for="desc"> Description:</label>
+        <br>
+        <select id="add-desc" name="desc">
+        <option value="BUS">BUS</option>
+        <option value="FOOD">FOOD</option>
+        <option value="GIFTS">GIFTS</option>
+        <option value="MEALS">MEASL</option>
+        <option value="MRT">MRT</option>
+        <option value="NTUC">NTUC</option>
+        </select>
+        <br>
+        <br>
+        <button id="add" class="btn">Add</button>
       </form>
-
-
+    </div>
+      <script src="script.js"></script>
 </body>
 </html>
